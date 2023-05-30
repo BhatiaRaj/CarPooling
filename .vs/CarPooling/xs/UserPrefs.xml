@@ -1,0 +1,46 @@
+﻿<Properties StartupConfiguration="{6C370CA9-2DEF-4765-9B11-3B387BAB47E3}|https">
+  <MonoDevelop.Ide.ItemProperties.CarPooling PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="CarPooling/Views/Shared/_Layout.cshtml">
+    <Files>
+      <File FileName="CarPooling/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="CarPooling/Views/Home/ApplyRequest.cshtml" Line="5" Column="22" />
+      <File FileName="CarPooling/Views/Home/OfferingCarpooling.cshtml" Line="67" Column="15" />
+      <File FileName="CarPooling/Views/Home/MyRequest.cshtml" Line="64" Column="109" />
+      <File FileName="CarPooling/Views/Home/RequestView.cshtml" />
+      <File FileName="CarPooling/Views/Shared/_Layout.cshtml" Line="13" Column="7" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="CarPooling" expanded="True">
+            <Node name="CarPooling" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True">
+                    <Node name="dist" expanded="True">
+                      <Node name="js" expanded="True">
+                        <Node name="bootstrap.js" expanded="True" />
+                      </Node>
+                    </Node>
+                  </Node>
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

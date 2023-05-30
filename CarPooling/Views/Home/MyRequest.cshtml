@@ -1,0 +1,54 @@
+﻿@{
+    ViewData["Title"] = "MyRequest";
+}
+
+<!--Appling CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css" rel="stylesheet">
+
+
+<h2>My Request</h2>
+
+
+<!--DataTable JQuery-->
+
+<div class="container" style="margin-top:20px; text-align: center;">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Bording Point</th>
+                <th>Route</th>
+                <th>No. of pessengers accommodate</th>
+                <th>Arriving Time</th>
+                <th>Leaving Time</th>
+                <th>Approx Cost</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Raj</td>
+                <td>Gotri</td>
+                <td>Gotri-L&T-Knowledge City</td>
+                <td>3</td>
+                <td>9:00 am</td>
+                <td>6:00 pm</td>
+                <td>200</td>
+                <td>
+                    <a class="nav-link text-blue" asp-area="" asp-controller="Home" asp-action="RequestView"><label class="form-label">View</label></a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+<script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script>$(document).ready(function () {
+        $('.table').DataTable();
+    });</script>
+
+
