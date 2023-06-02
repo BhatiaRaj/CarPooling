@@ -28,9 +28,9 @@ namespace CarPooling.Controllers
                 UserName = addApplyRequect.UserName,
                 PsNo = addApplyRequect.PsNo,
                 PickUpPoint = addApplyRequect.PickUpPoint,
-                Mobile  = addApplyRequect.Mobile,
+                Mobile = addApplyRequect.Mobile,
                 Time = addApplyRequect.Time
-                
+
             };
 
             await applyRequectDb.ApplyRequests.AddAsync(ApplyRequect);

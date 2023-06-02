@@ -17,6 +17,14 @@
       "PackagePath": "staticwebassets/Image/logo.png"
     },
     {
+      "Id": "/Users/raj/Documents/Internship_Project/CarPooling/CarPooling/wwwroot/Image/plus-circle.svg",
+      "PackagePath": "staticwebassets/Image/plus-circle.svg"
+    },
+    {
+      "Id": "/Users/raj/Documents/Internship_Project/CarPooling/CarPooling/wwwroot/Image/plus.svg",
+      "PackagePath": "staticwebassets/Image/plus.svg"
+    },
+    {
       "Id": "/Users/raj/Documents/Internship_Project/CarPooling/CarPooling/wwwroot/css/.DS_Store",
       "PackagePath": "staticwebassets/css/.DS_Store"
     },

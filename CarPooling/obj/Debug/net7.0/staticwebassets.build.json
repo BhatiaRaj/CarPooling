@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XkTeftjpbAPxKW0iznvQMZt0TIildS5i+EERWechqIc=",
+  "Hash": "hfT96P62fT+efFIH6IL64VhBr0bte7sYh3Zu/1PFRmM=",
   "Source": "CarPooling",
   "BasePath": "_content/CarPooling",
   "Mode": "Default",
@@ -168,6 +168,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/Image/logo.png"
+    },
+    {
+      "Identity": "/Users/raj/Documents/Internship_Project/CarPooling/CarPooling/wwwroot/Image/plus-circle.svg",
+      "SourceId": "CarPooling",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/raj/Documents/Internship_Project/CarPooling/CarPooling/wwwroot/",
+      "BasePath": "_content/CarPooling",
+      "RelativePath": "Image/plus-circle.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Image/plus-circle.svg"
+    },
+    {
+      "Identity": "/Users/raj/Documents/Internship_Project/CarPooling/CarPooling/wwwroot/Image/plus.svg",
+      "SourceId": "CarPooling",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/raj/Documents/Internship_Project/CarPooling/CarPooling/wwwroot/",
+      "BasePath": "_content/CarPooling",
+      "RelativePath": "Image/plus.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/Image/plus.svg"
     },
     {
       "Identity": "/Users/raj/Documents/Internship_Project/CarPooling/CarPooling/wwwroot/js/site.js",

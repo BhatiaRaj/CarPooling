@@ -22,11 +22,11 @@ namespace CarPooling.Controllers
         }
 
 
-        [HttpGet]
-        public IActionResult OfferingCarpooling()
-        {
-            return View();
-        }
+    [HttpGet]
+    public IActionResult OfferingCarpooling()
+    {
+        return View();
+    }
 
         // Async Method
         [HttpPost]
@@ -44,7 +44,7 @@ namespace CarPooling.Controllers
                 BPoint = addcarpooling.BPoint,
                 Route = addcarpooling.Route,
                 LTime = addcarpooling.LTime,
-                ATime  = addcarpooling.ATime,
+                ATime = addcarpooling.ATime,
                 Person = addcarpooling.Person,
                 Cost = addcarpooling.Cost
             };
