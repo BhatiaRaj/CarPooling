@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="../build/CarPooling.props" />
+  <Import Project="..\build\CarPooling.props" />
 </Project>
