@@ -47,61 +47,61 @@
                     <td>@Carpooling.Cost</td>
                     <td>
                         <button class="btn btn-primary" data-target="#applymodal" data-toggle="modal">Apply</button>
-        <div class="container">
-            <div class="row">
-                <div class="col col-sm-12">
-                    <div class="modal" data-keyboard="false" data-backdrop="static" id="applymodal" tabindex="-1">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h4 class="modal-title">Apply Request</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <form class="text-left" method="post" action="ApplyRequect">
-                                        @*<div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label>
-                                                    User Name:
-                                                </label>
-                                                <input type="text" class="form-control" asp-for="UserName" placeholder="User Name">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col col-sm-12">
+                                    <div class="modal" data-keyboard="false" data-backdrop="static" id="applymodal" tabindex="-1">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h4 class="modal-title">Apply Request</h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form class="text-left" method="post" action="ApplyRequect">
+                                                        @*<div class="form-row">
+                                                            <div class="form-group col-md-6">
+                                                                <label>
+                                                                    User Name:
+                                                                </label>
+                                                                <input type="text" class="form-control" asp-for="UserName" placeholder="User Name">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label>
+                                                                    PS No.
+                                                                </label>
+                                                                <input type="text" class="form-control" asp-for="PsNo" placeholder="PS No.">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label>
+                                                                    Pick Up Point:
+                                                                </label>
+                                                                <input type="text" class="form-control" asp-for="PickUpPoint" placeholder="Pick Up Point">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label>
+                                                                    Mobile No:
+                                                                </label>
+                                                                <input type="text" class="form-control" asp-for="MobNo" placeholder="Mobile No.">
+                                                            </div>
+                                                            <div class="form-group col-md-6">
+                                                                <label>
+                                                                    Time
+                                                                </label>
+                                                                <input type="text" class="form-control" asp-for="time" placeholder="Time">
+                                                            </div>
+                                                            </div>*@
+                                                        <div class="modal-footer">
+                                                            <button class="btn btn-light" data-dismiss="modal">Close</button>
+                                                            <button class="btn btn-primary">Apply</button>
+                                                        </div>
+                                                    </form>
+                                                </div>
                                             </div>
-                                            <div class="form-group col-md-6">
-                                                <label>
-                                                    PS No.
-                                                </label>
-                                                <input type="text" class="form-control" asp-for="PsNo" placeholder="PS No.">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>
-                                                    Pick Up Point:
-                                                </label>
-                                                <input type="text" class="form-control" asp-for="PickUpPoint" placeholder="Pick Up Point">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>
-                                                    Mobile No:
-                                                </label>
-                                                <input type="text" class="form-control" asp-for="MobNo" placeholder="Mobile No.">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>
-                                                    Time
-                                                </label>
-                                                <input type="text" class="form-control" asp-for="time" placeholder="Time">
-                                            </div>
-                                            </div>*@
-               ̰                             <div class="modal-footer">
-                                            <button class="btn btn-light" data-dismiss="modal">Close</button>
-                                            <button class="btn btn-primary">Apply</button>
-                                            </div>
-                                    </form>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
                     </td>
                 </tr>
             }
@@ -124,3 +124,28 @@
 <script>$(document).ready(function () {
         $('.table').DataTable();
     });</script>
+
+<!--jQuery With -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>$(document).ready(function () {
+        $('#myForm').submit(function (event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            var formData = $(this).serialize(); // Serialize the form data
+
+            $.ajax({
+                url: $(this).attr('action'),
+                type: 'POST',
+                data: formData,
+                success: function (result) {
+                    // Handle the success response
+                    console.log(result);
+                },
+                error: function (xhr, status, error) {
+                    // Handle the error response
+                    console.log(xhr.responseText);
+                }
+            });
+        });
+    });
+</script>
