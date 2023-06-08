@@ -101,6 +101,7 @@
                                                                 <button class="btn btn-light" data-dismiss="modal">Close</button>
                                                                 <button type="submit" class="btn btn-primary" onclick="applyRequest">Apply</button>
                                                             </div>
+                                                        </div>
                                                     </form>
                                                 </div>
                                             </div>
@@ -136,39 +137,29 @@
 </script>
 
 <!--jQuery With -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+@*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>*@
 <script>
     $(document).ready(function () {
-        $('#applyRequest').click(function (event) {
-            event.preventDefault(); // Prevent the default button click behavior
-
+        $('#applyRequest').click(function () {
             var data = {
-                // Set your data properties here
                 UserName: $('#UserName').val(),
                 PsNo: $('#PsNo').val(),
                 PickUpPoint: $('#PickUpPoint').val(),
                 Mobile: $('#Mobile').val(),
                 Time: $('#Time').val()
-                // Add more properties as needed
             };
 
             $.ajax({
-                url: '@Url.Action("ApplyRequect", "ApplyRequectController")',
+                url: '/ApplyRequectController/ApplyRequect',
                 type: 'POST',
-                data: JSON.stringify(data),
-                contentType: 'application/json',
+                data: data,
                 success: function (result) {
-                    // Handle the success response
                     console.log(result);
                 },
                 error: function (xhr, status, error) {
-                    // Handle the error response
                     console.log(xhr.responseText);
                 }
             });
         });
     });
 </script>
-
-
