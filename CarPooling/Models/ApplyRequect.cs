@@ -2,7 +2,7 @@
 
 namespace CarPooling.Models
 {
-    public class ApplyRequect
+    public class carpooling
     {
         [Key]
         public int Id { get; set; }

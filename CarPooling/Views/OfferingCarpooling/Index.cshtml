@@ -1,6 +1,6 @@
 @model List<CarPooling.Models.Carpooling>
 
-@*@model CarPooling.Models.ApplyRequect*@
+@*@model CarPooling.Models.carpooling*@
 
 @{
     ViewData["Title"] = "Home Page";
@@ -61,7 +61,7 @@
                                                     <h4 class="modal-title">Apply Request</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form class="text-left" method="post" action="ApplyRequect">
+                                                    <form class="text-left" method="post" action="carpooling">
                                                         <div class="form-row">
                                                             <div class="form-group col-md-6">
                                                                 <label>
@@ -98,8 +98,8 @@
 
                                                         <div class="modal-footer">
                                                             <div class="modal-footer">
-                                                                <button class="btn btn-light" data-dismiss="modal">Close</button>
                                                                 <button type="submit" class="btn btn-primary" onclick="applyRequest">Apply</button>
+                                                                <button class="btn btn-light" data-dismiss="modal">Close</button>
                                                             </div>
                                                         </div>
                                                     </form>
@@ -123,7 +123,7 @@
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
 <!--Script for Model-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
 <!--jQuery Table Js-->
@@ -150,7 +150,7 @@
             };
 
             $.ajax({
-                url: '/ApplyRequectController/ApplyRequect',
+                url: '@Url.Action("ApplyRequect", "ApplyRequectController")',
                 type: 'POST',
                 data: data,
                 success: function (result) {

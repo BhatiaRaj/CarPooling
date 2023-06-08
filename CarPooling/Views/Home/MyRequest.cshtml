@@ -1,4 +1,4 @@
-﻿@model List<CarPooling.Models.ApplyRequect>
+﻿@model List<CarPooling.Models.Carpooling>
 
 @{
     ViewData["Title"] = "MyRequest";
@@ -31,96 +31,98 @@
             </tr>
         </thead>
         <tbody>
-           
-            <tr>
-                <td>UserName</td>
-                <td>PsNo</td>
-                <td>PickUpPoint</td>
-                <td>3</td>
-                <td>9:00 am</td>
-                <td>6:00 pm</td>
-                <td>200</td>
-                <td>
-                    @*<a class="nav-link text-blue" asp-area="" asp-controller="Home" asp-action="RequestView"><label class="form-label">View</label></a>*@
-                    <button class="btn btn-primary" data-target="#loginmodal" data-toggle="modal">View</button>
-                    <div class="container">
-                        <div class="row">
-                            <div class="col col-sm-12">
-                                <div class="modal" data-keyboard="false" data-backdrop="static" id="loginmodal" tabindex="-1">
-                                    <div class="modal-dialog">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h4 class="modal-title">View Request</h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <form class="text-left">
-                                                    <div class="form-row">
-                                                        @*@foreach (var applyRequect in Model)*@
-                                                        {
-                                                        <div class="form-group col-md-6">
-                                                            <label>
-                                                                    UserName
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label>
-                                                                    PsNo
-                                                            </label>
-                                                        </div>
 
-                                                        <div class="form-group col-md-6">
-                                                            <label>
-                                                                PickUpPoint
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label>
-                                                                Mobile
-                                                            </label>
-                                                        </div>
-                                                        <div class="form-group col-md-6">
-                                                            <label>
-                                                                Time
-                                                            </label>
-                                                        </div>
-                                                        @*}*@
-                                                    </div>
-                                                    
-                                                    <div class="modal-footer">
-                                                        <button class="btn btn-light" data-dismiss="modal">Reject</button>
-                                                        <button class="btn btn-primary">Accept</button>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <tr>
+                @foreach (var Carpooling in Model)
+                {
+                    <td>@Carpooling.EmployeeName</td>
+                    <td>@Carpooling.BPoint</td>
+                    <td>@Carpooling.Route</td>
+                    <td>@Carpooling.Person</td>
+                    <td>@Carpooling.ATime</td>
+                    <td>@Carpooling.LTime</td>
+                    <td>@Carpooling.Cost</td>
+                    <td>
+                        @* <button class="btn btn-primary" data-target="#loginmodal" data-toggle="modal">View</button>
+                    <div class="container">
+                    <div class="row">
+                    <div class="col col-sm-12">
+                    <div class="modal" data-keyboard="false" data-backdrop="static" id="loginmodal" tabindex="-1">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    <h4 class="modal-title">View Request</h4>
                     </div>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-primary">Open</button>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-primary">Close</button>
-                </td>
-            </tr>
-            
+                    <div class="modal-body">
+                    <form class="text-left">
+                    <div class="form-row">
+                    <div class="form-group col-md-6">
+                    <label>
+                    UserName
+                    </label>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label>
+                    PsNo
+                    </label>
+                    </div>
+
+                    <div class="form-group col-md-6">
+                    <label>
+                    PickUpPoint
+                    </label>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label>
+                    Mobile
+                    </label>
+                    </div>
+                    <div class="form-group col-md-6">
+                    <label>
+                    Time
+                    </label>
+                    </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                    <button class="btn btn-light" data-dismiss="modal">Reject</button>
+                    <button class="btn btn-primary">Accept</button>
+                    </div>
+                    </form>
+                    </div>
+
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </div>*@
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Open</button>
+                    </td>
+                    <td>
+                        <button type="button" class="btn btn-primary">Close</button>
+                    </td>
+                    }
+                </tr>
+               
+                @*<a class="nav-link text-blue" asp-area="" asp-controller="Home" asp-action="RequestView"><label class="form-label">View</label></a>*@
         </tbody>
     </table>
 </div>
 
 <!--Script for Model-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
 <!--Script for Data-Table-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-<script>$(document).ready(function () {
+<script>
+    $(document).ready(function () {
         $('.table').DataTable();
     });</script>
 
