@@ -31,12 +31,11 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var applyRequect in  Model)
-            {
+           
             <tr>
-                <td>@applyRequect.UserName</td>
-                <td>@applyRequect.PsNo</td>
-                <td>@applyRequect.PickUpPoint</td>
+                <td>UserName</td>
+                <td>PsNo</td>
+                <td>PickUpPoint</td>
                 <td>3</td>
                 <td>9:00 am</td>
                 <td>6:00 pm</td>
@@ -56,33 +55,37 @@
                                             <div class="modal-body">
                                                 <form class="text-left">
                                                     <div class="form-row">
+                                                        @*@foreach (var applyRequect in Model)*@
+                                                        {
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                    @applyRequect.UserName
+                                                                    UserName
                                                             </label>
                                                         </div>
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                    @applyRequect.PsNo
+                                                                    PsNo
                                                             </label>
                                                         </div>
 
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                @applyRequect.PickUpPoint
+                                                                PickUpPoint
                                                             </label>
                                                         </div>
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                @applyRequect.Mobile
+                                                                Mobile
                                                             </label>
                                                         </div>
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                @applyRequect.Time
+                                                                Time
                                                             </label>
                                                         </div>
+                                                        @*}*@
                                                     </div>
+                                                    
                                                     <div class="modal-footer">
                                                         <button class="btn btn-light" data-dismiss="modal">Reject</button>
                                                         <button class="btn btn-primary">Accept</button>
@@ -104,7 +107,7 @@
                     <button type="button" class="btn btn-primary">Close</button>
                 </td>
             </tr>
-            }
+            
         </tbody>
     </table>
 </div>
