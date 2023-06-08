@@ -19,8 +19,8 @@
 </div>-->
 
 <div class="d-flex gap-2 mb-3">
-        <a asp-area="" asp-controller="OfferingCarPooling" asp-action="OfferingCarpooling"><label class="btn"><img src="~/Image/plus-circle.svg" height="35px" width="35px" /></label></a>
-       
+    <a asp-area="" asp-controller="OfferingCarPooling" asp-action="OfferingCarpooling"><label class="btn"><img src="~/Image/plus-circle.svg" height="35px" width="35px" /></label></a>
+
 </div>
 <!--DataTable JQuery-->
 
@@ -67,49 +67,40 @@
                                                                 <label>
                                                                     User Name:
                                                                 </label>
-<<<<<<< HEAD
-                                                                <input type="text" class="form-control"  placeholder="User Name">
-=======
-                                                                <input type="text" class="form-control" placeholder="User Name">
->>>>>>> 0bd0d6c5c5784fcb700dd15aafd33753e927bd94
+
+                                                                <input type="text" class="form-control" id="UserName" placeholder="User Name">
                                                             </div>
                                                             <div class="form-group col-md-6">
                                                                 <label>
                                                                     PS No.
                                                                 </label>
-<<<<<<< HEAD
-                                                                <input type="text" class="form-control"  placeholder="PS No.">
-=======
-                                                                <input type="text" class="form-control" placeholder="PS No.">
->>>>>>> 0bd0d6c5c5784fcb700dd15aafd33753e927bd94
+                                                                <input type="text" class="form-control" id="PsNo" placeholder="PS No.">
                                                             </div>
                                                             <div class="form-group col-md-6">
                                                                 <label>
                                                                     Pick Up Point:
                                                                 </label>
-                                                                <input type="text" class="form-control" placeholder="Pick Up Point">
+                                                                <input type="text" class="form-control" id="PickUpPoint" placeholder="Pick Up Point">
                                                             </div>
                                                             <div class="form-group col-md-6">
                                                                 <label>
                                                                     Mobile No:
                                                                 </label>
-                                                                <input type="text" class="form-control" placeholder="Mobile No.">
+                                                                <input type="text" class="form-control" id="Mobile" placeholder="Mobile No.">
                                                             </div>
                                                             <div class="form-group col-md-6">
                                                                 <label>
                                                                     Time
                                                                 </label>
-                                                                <input type="text" class="form-control" placeholder="Time">
+                                                                <input type="text" class="form-control" id="Time" placeholder="Time">
                                                             </div>
-                                                            </div>
-<<<<<<< HEAD
-                                                            <div class="modal-footer">
-=======
-                                                        <div class="modal-footer">
->>>>>>> 0bd0d6c5c5784fcb700dd15aafd33753e927bd94
-                                                            <button class="btn btn-light" data-dismiss="modal">Close</button>
-                                                            <button class="btn btn-primary">Apply</button>
                                                         </div>
+
+                                                        <div class="modal-footer">
+                                                            <div class="modal-footer">
+                                                                <button class="btn btn-light" data-dismiss="modal">Close</button>
+                                                                <button type="submit" class="btn btn-primary" onclick="applyRequest">Apply</button>
+                                                            </div>
                                                     </form>
                                                 </div>
                                             </div>
@@ -120,18 +111,12 @@
                         </div>
                     </td>
                 </tr>
-              }
+            }
         </tbody>
     </table>
 </div>
 
-<script>
-    function OfferingCarpooling() {
-        // Your code logic here
-        var fileUrl = "OfferingCarpooling/OfferingCarpooling.chhtml"; // Replace with the actual file URL
-        window.open(fileUrl, "_blank");
-    }
-</script>
+
 <!--Bootstrap Js-->
 <script src="~/lib/jquery/dist/jquery.min.js"></script>
 <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -143,23 +128,36 @@
 <!--jQuery Table Js-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
-<script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-<script>$(document).ready(function () {
+<script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+<script>
+    $(document).ready(function () {
         $('.table').DataTable();
-    });</script>
+    });
+</script>
 
 <!--jQuery With -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>$(document).ready(function () {
-        $('#myForm').submit(function (event) {
-            event.preventDefault(); // Prevent the default form submission
 
-            var formData = $(this).serialize(); // Serialize the form data
+<script>
+    $(document).ready(function () {
+        $('#applyRequest').click(function (event) {
+            event.preventDefault(); // Prevent the default button click behavior
+
+            var data = {
+                // Set your data properties here
+                UserName: $('#UserName').val(),
+                PsNo: $('#PsNo').val(),
+                PickUpPoint: $('#PickUpPoint').val(),
+                Mobile: $('#Mobile').val(),
+                Time: $('#Time').val()
+                // Add more properties as needed
+            };
 
             $.ajax({
-                url: $(this).attr('action'),
+                url: '@Url.Action("ApplyRequect", "ApplyRequectController")',
                 type: 'POST',
-                data: formData,
+                data: JSON.stringify(data),
+                contentType: 'application/json',
                 success: function (result) {
                     // Handle the success response
                     console.log(result);
@@ -172,3 +170,5 @@
         });
     });
 </script>
+
+
