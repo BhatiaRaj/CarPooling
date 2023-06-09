@@ -21,7 +21,7 @@ namespace CarPooling.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> ApplyRequest(ApplyRequect addApplyRequect)
+        public async Task<IActionResult> ApplyRequect(ApplyRequect addApplyRequect)
         {
             var ApplyRequect = new ApplyRequect()
             {
