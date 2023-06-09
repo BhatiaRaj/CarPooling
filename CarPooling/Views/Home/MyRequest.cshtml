@@ -1,5 +1,5 @@
-﻿@model List<CarPooling.Models.ApplyRequect>
-
+﻿@*@model List<CarPooling.Models.ApplyRequect>
+*@
 @{
     ViewData["Title"] = "MyRequest";
 }
@@ -31,18 +31,18 @@
             </tr>
         </thead>
         <tbody>
-            @foreach (var applyRequect in  Model)
-            {
+
+
+
             <tr>
-                <td>@applyRequect.UserName</td>
-                <td>@applyRequect.PsNo</td>
-                <td>@applyRequect.PickUpPoint</td>
+                <td>Raj</td>
+                <td>ABC</td>
+                <td>ABC</td>
                 <td>3</td>
-                <td>9:00 am</td>
-                <td>6:00 pm</td>
+                <td>09:00</td>
+                <td>06:00</td>
                 <td>200</td>
                 <td>
-                    @*<a class="nav-link text-blue" asp-area="" asp-controller="Home" asp-action="RequestView"><label class="form-label">View</label></a>*@
                     <button class="btn btn-primary" data-target="#loginmodal" data-toggle="modal">View</button>
                     <div class="container">
                         <div class="row">
@@ -54,42 +54,45 @@
                                                 <h4 class="modal-title">View Request</h4>
                                             </div>
                                             <div class="modal-body">
+
                                                 <form class="text-left">
                                                     <div class="form-row">
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                    @applyRequect.UserName
+                                                                UserName
                                                             </label>
                                                         </div>
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                    @applyRequect.PsNo
+                                                                PsNo
                                                             </label>
                                                         </div>
 
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                @applyRequect.PickUpPoint
+                                                                PickUpPoint
                                                             </label>
                                                         </div>
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                @applyRequect.Mobile
+                                                                Mobile
                                                             </label>
                                                         </div>
                                                         <div class="form-group col-md-6">
                                                             <label>
-                                                                @applyRequect.Time
+                                                                Time
                                                             </label>
                                                         </div>
+
                                                     </div>
+
                                                     <div class="modal-footer">
                                                         <button class="btn btn-light" data-dismiss="modal">Reject</button>
                                                         <button class="btn btn-primary">Accept</button>
                                                     </div>
                                                 </form>
                                             </div>
-                                            
+
                                         </div>
                                     </div>
                                 </div>
@@ -105,19 +108,23 @@
                 </td>
             </tr>
             }
+
+
+            @*<a class="nav-link text-blue" asp-area="" asp-controller="Home" asp-action="RequestView"><label class="form-label">View</label></a>*@
         </tbody>
     </table>
 </div>
 
 <!--Script for Model-->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
 
 <!--Script for Data-Table-->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
 <script src="//cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
-<script>$(document).ready(function () {
+<script>
+    $(document).ready(function () {
         $('.table').DataTable();
     });</script>
 

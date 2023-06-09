@@ -19,9 +19,10 @@ namespace CarPooling.Controllers
         {
             var CarPooling = await carpoolingDb.OppernigCarpooling.ToListAsync();
             return View(CarPooling);
-            
+            //return View();
         }
 
+       
 
         [HttpGet]
         public IActionResult OfferingCarpooling()
