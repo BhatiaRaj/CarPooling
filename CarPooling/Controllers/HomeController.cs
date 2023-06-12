@@ -1,16 +1,19 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using CarPooling.Models;
+using CarPooling.Data;
 
 namespace CarPooling.Controllers;
 
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
+    private readonly CarpoolingDbContext carpoolingDb;
 
-    public HomeController(ILogger<HomeController> logger)
+    public HomeController(ILogger<HomeController> logger,CarpoolingDbContext carpoolingDbContext)
     {
         _logger = logger;
+        carpoolingDb = carpoolingDbContext;
     }
 
     public IActionResult Index()
@@ -20,19 +23,11 @@ public class HomeController : Controller
 
     public IActionResult MyRequest()
     {
-        return View();
+        var CarPooling =  carpoolingDb.OppernigCarpooling.ToList();
+        return View(CarPooling);
     }
 
-    //public IActionResult OfferingCarpooling()
-    //{
-    //    return View();
-    //}
-
-    //public IActionResult ApplyRequest()
-    //{
-    //    return View();
-    //}
-
+   
     public IActionResult RequestView()
     {
         return View();

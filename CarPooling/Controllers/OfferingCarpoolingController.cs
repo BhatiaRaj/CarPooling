@@ -16,13 +16,12 @@ namespace CarPooling.Controllers
 
         [HttpGet]
         public async Task<IActionResult> Index()
+        
         {
             var CarPooling = await carpoolingDb.OppernigCarpooling.ToListAsync();
             return View(CarPooling);
             //return View();
         }
-
-       
 
         [HttpGet]
         public IActionResult OfferingCarpooling()

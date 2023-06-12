@@ -17,7 +17,8 @@ namespace CarPooling.Controllers
         [HttpGet]
         public IActionResult ApplyRequect()
         {
-            return View();
+            var applyRequests = applyRequectDb.ApplyRequests.ToList();
+            return Json(applyRequests);
         }
 
         [HttpPost]
@@ -31,7 +32,6 @@ namespace CarPooling.Controllers
                 Mobile = addApplyRequect.Mobile,
                 Time = addApplyRequect.Time
             };
-
             await applyRequectDb.ApplyRequests.AddAsync(ApplyRequect);
             await applyRequectDb.SaveChangesAsync();
 

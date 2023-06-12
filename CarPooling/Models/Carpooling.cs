@@ -45,5 +45,10 @@ namespace CarPooling.Models
 
         //Approximate Cost Per Person:
         public long Cost { get; set; }
+
+        //public string CreatedBy { get; set; }
+
+
+        
     }
 }

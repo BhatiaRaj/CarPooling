@@ -61,44 +61,42 @@
                                                     <h4 class="modal-title">Apply Request</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <form class="text-left">
-                                                        <div class="form-row">
-                                                            <div class="form-group col-md-6">
-                                                                <label>
-                                                                    User Name:
-                                                                </label>
-                                                                <input type="text" class="form-control" id="UserName" placeholder="User Name">
-                                                            </div>
-                                                            <div class="form-group col-md-6">
-                                                                <label>
-                                                                    PS No.
-                                                                </label>
-                                                                <input type="text" class="form-control" id="PsNo" placeholder="PS No.">
-                                                            </div>
-                                                            <div class="form-group col-md-6">
-                                                                <label>
-                                                                    Pick Up Point:
-                                                                </label>
-                                                                <input type="text" class="form-control" id="PickUpPoint" placeholder="Pick Up Point">
-                                                            </div>
-                                                            <div class="form-group col-md-6">
-                                                                <label>
-                                                                    Mobile No:
-                                                                </label>
-                                                                <input type="text" class="form-control" id="Mobile" placeholder="Mobile No.">
-                                                            </div>
-                                                            <div class="form-group col-md-6">
-                                                                <label>
-                                                                    Time
-                                                                </label>
-                                                                <input type="text" class="form-control" id="Time" placeholder="HH:MM">
-                                                            </div>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <label>
+                                                                User Name:
+                                                            </label>
+                                                            <input type="text" class="form-control" id="UserName" placeholder="User Name">
                                                         </div>
-                                                        <div class="modal-footer">
-                                                                <button type="submit" class="btn btn-primary" onclick="applyRequect">Apply</button>
-                                                                <button class="btn btn-light" data-dismiss="modal">Close</button>
+                                                        <div class="form-group col-md-6">
+                                                            <label>
+                                                                PS No.
+                                                            </label>
+                                                            <input type="text" class="form-control" id="PsNo" placeholder="PS No.">
                                                         </div>
-                                                    </form>
+                                                        <div class="form-group col-md-6">
+                                                            <label>
+                                                                Pick Up Point:
+                                                            </label>
+                                                            <input type="text" class="form-control" id="PickUpPoint" placeholder="Pick Up Point">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>
+                                                                Mobile No:
+                                                            </label>
+                                                            <input type="text" class="form-control" id="Mobile" placeholder="Mobile No.">
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <label>
+                                                                Time
+                                                            </label>
+                                                            <input type="text" class="form-control" id="Time" placeholder="HH:MM">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-primary" id="applyRequect">Apply</button>
+                                                        <button class="btn btn-light" data-dismiss="modal">Close</button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -144,9 +142,9 @@
                 Mobile: $('#Mobile').val(),
                 Time: $('#Time').val()
             };
-    
+
             $.ajax({
-                url: '/ApplyRequectController/ApplyRequect',
+                url: `@Url.Action("ApplyRequect","ApplyRequect")`,
                 type: 'POST',
                 data: data,
                 success: function (response) {
