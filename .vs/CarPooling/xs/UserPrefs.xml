@@ -1,32 +1,18 @@
 ﻿<Properties StartupConfiguration="{6C370CA9-2DEF-4765-9B11-3B387BAB47E3}|https">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="CarPooling/Views/OfferingCarpooling/Index.cshtml">
-    <Files>
-      <File FileName="CarPooling/Views/OfferingCarpooling/Index.cshtml" Line="93" Column="53" />
-      <File FileName="CarPooling/Models/ApplyRequect.cs" Line="21" Column="1" />
-      <File FileName="CarPooling/Views/OfferingCarpooling/OfferingCarpooling.cshtml" Line="1" Column="8" />
-      <File FileName="CarPooling/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="CarPooling/Controllers/ApplyRequectController.cs" Line="15" Column="1" />
-      <File FileName="CarPooling/Controllers/OfferingCarpoolingController.cs" Line="56" Column="9" />
-      <File FileName="CarPooling/Data/CarpoolingDbContext.cs" Line="1" Column="1" />
-      <File FileName="CarPooling/Models/Carpooling.cs" Line="1" Column="1" />
-      <File FileName="CarPooling/Models/ErrorViewModel.cs" Line="1" Column="1" />
-      <File FileName="CarPooling/Views/ApplyRequect/ApplyRequect.cshtml" Line="1" Column="1" />
-      <File FileName="CarPooling/Views/Home/ApplyRequest.cshtml" Line="1" Column="1" />
-      <File FileName="CarPooling/Views/Home/Index.cshtml" Line="1" Column="1" />
-      <File FileName="CarPooling/Views/Home/MyRequest.cshtml" Line="1" Column="1" />
-      <File FileName="CarPooling/Views/Home/OfferingCarpooling.cshtml" Line="1" Column="1" />
-      <File FileName="CarPooling/Views/Home/RequestView.cshtml" Line="1" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.ItemProperties.CarPooling PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="CarPooling" expanded="True">
             <Node name="CarPooling" expanded="True">
+              <Node name="Dependencies" expanded="True">
+                <Node name="PackageDependencies" expanded="True" />
+              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Data" expanded="True" />
               <Node name="Models" expanded="True" />
@@ -34,9 +20,7 @@
                 <Node name="ApplyRequect" expanded="True" />
                 <Node name="Carpoolings" expanded="True" />
                 <Node name="Home" expanded="True" />
-                <Node name="OfferingCarpooling" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="OfferingCarpooling" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
@@ -55,11 +39,8 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.CarPooling PreferredExecutionTarget="/Applications/Google Chrome.app" />
 </Properties>
