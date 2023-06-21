@@ -1,14 +1,10 @@
 ﻿<Properties StartupConfiguration="{6C370CA9-2DEF-4765-9B11-3B387BAB47E3}|https">
   <MonoDevelop.Ide.ItemProperties.CarPooling PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="CarPooling/Controllers/HomeController.cs">
     <Files>
       <File FileName="CarPooling/Controllers/HomeController.cs" Line="26" Column="1" />
+      <File FileName="CarPooling/Controllers/OfferingCarpoolingController.cs" Line="23" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -48,4 +44,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
 </Properties>
