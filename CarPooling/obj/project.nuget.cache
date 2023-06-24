@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3mNF9aC4dCZyqR+0gcDzqENNIDvhWnoZ6Y/GlxkREPFNn0KeIKPoZQJNxiDdBsrmEKV0b1Erx8lbCybyOwVl3A==",
+  "dgSpecHash": "XovIDHiM8t5Gwm3h4RCYOpUrbaaPgCzg8zks8RBZevAY4s7y7zX/TRhdulyHb6rc7hB6KIpdwo462OS/vzp7uQ==",
   "success": true,
   "projectFilePath": "/Users/raj/Documents/Internship_Project/CarPooling/CarPooling/CarPooling.csproj",
   "expectedPackageFiles": [
@@ -76,9 +76,9 @@
     "/Users/raj/.nuget/packages/microsoft.data.sqlclient.sni.runtime/5.0.1/microsoft.data.sqlclient.sni.runtime.5.0.1.nupkg.sha512",
     "/Users/raj/.nuget/packages/microsoft.diasymreader/1.4.0/microsoft.diasymreader.1.4.0.nupkg.sha512",
     "/Users/raj/.nuget/packages/microsoft.dotnet.scaffolding.shared/7.0.7/microsoft.dotnet.scaffolding.shared.7.0.7.nupkg.sha512",
-    "/Users/raj/.nuget/packages/microsoft.entityframeworkcore/7.0.7/microsoft.entityframeworkcore.7.0.7.nupkg.sha512",
-    "/Users/raj/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.7/microsoft.entityframeworkcore.abstractions.7.0.7.nupkg.sha512",
-    "/Users/raj/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.7/microsoft.entityframeworkcore.analyzers.7.0.7.nupkg.sha512",
+    "/Users/raj/.nuget/packages/microsoft.entityframeworkcore/7.0.8/microsoft.entityframeworkcore.7.0.8.nupkg.sha512",
+    "/Users/raj/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.8/microsoft.entityframeworkcore.abstractions.7.0.8.nupkg.sha512",
+    "/Users/raj/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.8/microsoft.entityframeworkcore.analyzers.7.0.8.nupkg.sha512",
     "/Users/raj/.nuget/packages/microsoft.entityframeworkcore.design/7.0.7/microsoft.entityframeworkcore.design.7.0.7.nupkg.sha512",
     "/Users/raj/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.7/microsoft.entityframeworkcore.relational.7.0.7.nupkg.sha512",
     "/Users/raj/.nuget/packages/microsoft.entityframeworkcore.sqlserver/7.0.7/microsoft.entityframeworkcore.sqlserver.7.0.7.nupkg.sha512",
